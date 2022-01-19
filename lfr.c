@@ -1,4 +1,4 @@
-/* Lfr - lfr prints the character set number times. 
+/* Lfr - lfr creates a string from the leading n and end n characters. 
    Copyright (C) 2021 by pic16f877ccs
 
    This program is free software: you can redistribute it and/or modify
@@ -65,15 +65,17 @@ enum {
 /* end code from system.h */
 
 void usage(int status) {
-    fputs("\nUsage: fllt [OPTION]... [FILE]\n"\
+    fputs("\nUsage: lfr [OPTION]...\n"\
           "Prints the character set number times\n", stdout);
 
     fputs("\nOptions:\n\
-  -f,     --fill=CHARACTER  use single CHARACTER to filling (default: \\s)\n\
-  -n,     --number=INTEGER  use positive INTEGER to expand max lines (default: 0)\n\
-  -z,     --zero            output lines are NUL-terminated\n\
-          --help            display this help and exit\n\
-          --version         output version information and exit\n\n", stdout);
+  -F,     --start=CHARACTER			use a single CHARACTER to pad the beginning of the string (default: \\s)\n\
+  -N,     --number-start=INTEGER	use a positive INTEGER to expand the beginnings of the string (default: 0)\n\
+  -f,     --end=CHARACTER			use a single CHARACTER to pad the end of the string (default: \\s)\n\
+  -n,     --number-end=INTEGER		use a positive INTEGER to expand the end of the string (default: 0)\n\
+  -z,     --zero					output lines are NUL-terminated\n\
+          --help					display this help and exit\n\
+          --version					output version information and exit\n\n", stdout);
 
     exit(status);
 }
