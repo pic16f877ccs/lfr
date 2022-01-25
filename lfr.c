@@ -69,13 +69,13 @@ void usage(int status) {
           "Prints the character set number times\n", stdout);
 
     fputs("\nOptions:\n\
-  -F,     --start=CHARACTER			use a single CHARACTER to pad the beginning of the string (default: \\s)\n\
-  -N,     --number-start=INTEGER	use a positive INTEGER to expand the beginnings of the string (default: 0)\n\
-  -f,     --end=CHARACTER			use a single CHARACTER to pad the end of the string (default: \\s)\n\
-  -n,     --number-end=INTEGER		use a positive INTEGER to expand the end of the string (default: 0)\n\
-  -z,     --zero					output lines are NUL-terminated\n\
-          --help					display this help and exit\n\
-          --version					output version information and exit\n\n", stdout);
+  -F,     --start=CHARACTER         use a single CHARACTER to pad the beginning of the string (default: \\s)\n\
+  -N,     --number-start=INTEGER    use a positive INTEGER to expand the beginnings of the string (default: 0)\n\
+  -f,     --end=CHARACTER           use a single CHARACTER to pad the end of the string (default: \\s)\n\
+  -n,     --number-end=INTEGER      use a positive INTEGER to expand the end of the string (default: 0)\n\
+  -z,     --zero                    output lines are NUL-terminated\n\
+          --help                    display this help and exit\n\
+          --version                 output version information and exit\n\n", stdout);
 
     exit(status);
 }
